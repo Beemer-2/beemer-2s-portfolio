@@ -1,7 +1,7 @@
 * {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-    color: white
+    color: white;
 }
 
 html, body {
@@ -19,6 +19,7 @@ body {
     position: absolute;
     width: 300%;
     height: 300%;
+    background-color: black; /* Helps prevent flashing when loading site */
     background-image: url("../ASSETS/Space.png");
     background-repeat: repeat;
     animation: infinite linear 140s move-background;
@@ -33,12 +34,24 @@ header {
 }
 
 nav > ul {
+    padding: 0px 20px;
     display: flex;
     justify-content: center;
     gap: 120px;
     list-style-type: none;
     font-size: xx-large;
 }
+
+#launch {
+    background-color: #f23232;    
+    border: 4px ridge darkgray;
+    padding: 10px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bolder;
+    letter-spacing: 2px;
+}   
+
 
 
 @keyframes move-background {
