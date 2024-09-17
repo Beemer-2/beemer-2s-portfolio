@@ -1,0 +1,52 @@
+* {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+}
+
+body {
+    margin: 0;
+}
+
+#scrolling-background {
+    z-index: -1;
+    position: absolute;
+    width: 300%;
+    height: 300%;
+    background-image: url("../ASSETS/Space.png");
+    background-repeat: repeat;
+    animation: infinite linear 140s move-background;
+    
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 20%
+}
+
+nav > ul {
+    display: flex;
+    justify-content: center;
+    gap: 120px;
+    list-style-type: none;
+    font-size: xx-large;
+}
+
+
+@keyframes move-background {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-50%, -50%) rotate(20deg);
+    }
+}
