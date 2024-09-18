@@ -1,0 +1,75 @@
+* {
+    background-color: black;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    scrollbar-width: none;
+}
+
+*::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    margin: 0;
+    height: 100%;
+}
+
+
+h1 {
+    margin: 0;
+    color: red;
+    background-image: linear-gradient(110deg, #16d559, #1aa090);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: hue 8s infinite linear;
+    letter-spacing: 1px;
+    font-size: 4rem;
+}
+
+@keyframes hue {
+    0% {
+        filter: hue-rotate(0deg);
+    }
+    100% {
+        filter: hue-rotate(360deg)
+    }
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#purpose-display-container {
+    transition: 1s ease-in-out;
+    padding: 10px;
+    background-image: linear-gradient(110deg, #16d559, #1aa090);
+    width: fit-content;
+    text-align: center;
+    margin-top: 42vh;
+    margin-top: 42svh;
+    border-radius: 10px;
+    animation: hue 8s infinite linear;
+
+    
+}
+
+
+
+
+#purpose-display {
+    border-radius: 6px;
+    padding: 20px;
+    /*border: 6px solid wheat; Works. No border radius :(
+    border-image: linear-gradient(110deg, #16d559, #1aa090);
+    border-radius: 12px;
+    border-image-slice: 10%; 
+    animation: hue 8s infinite linear;*/
+
+    background-color: #090909;
+}
+
+.opacity-none {
+    opacity: 0;
+}
