@@ -8,4 +8,5 @@
     margin: 20px;
     color: whitesmoke;
     transition: 1s ease-in-out;
+    z-index: 100000;
 }
