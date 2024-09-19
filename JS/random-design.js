@@ -18,3 +18,20 @@ document.addEventListener("keydown", (q) => {
         }
     }
 });
+
+let currentState = false;
+
+function changeState() {
+    console.log("thing")
+    if (currentState) {
+        currentState = false;
+        randomSiteA.style.backgroundColor = "black";
+    } else {
+        currentState = true;
+        randomSiteA.style.backgroundColor = "transparent";
+    }
+    setTimeout(() => {changeState()}, 2000);
+}
+
+console.log("huh")
+changeState();
