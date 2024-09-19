@@ -87,6 +87,7 @@ main {
     background-color: whitesmoke;
     scale: 0 1;
     animation: linear scroll-anim;
+    z-index: 10000;
     animation-timeline: scroll(); /*does not work on safari or firefox :(*/
 }
 
@@ -126,4 +127,9 @@ li > a {
 #right-links {
     padding-left: 0;
     padding-right: 24px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
 }
