@@ -1,0 +1,27 @@
+#site-menu-main {
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: small;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 10px 20px;
+    z-index: 100000;
+    background-color: rgb(0, 0, 0)
+}
+
+#site-menu-main, #menu-hidden-display {
+    transition: 1s ease-in-out;
+}
+
+#site-menu, #site-menu-random-a {color: whitesmoke;}
+
+#menu-hidden-display {
+    font-size: x-small;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 100000;
+    margin: 2px;
+    opacity: 0;
+}

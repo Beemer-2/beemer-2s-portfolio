@@ -3,17 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../CSS/design-1-stylesheet.css">
-    <link rel="stylesheet" href="../CSS/random-site-button.css">
+    <link rel="stylesheet" id="main-stylesheet" href="../CSS/design-1-stylesheet-main.css">
+    <link rel="stylesheet" href="../CSS/site-menu.css">
     <title>Document</title>
 </head>
-<body>
-    <script defer src="../JS/random-design.js"></script>
-    <a id="random-site-a" href="">Go to a random site design (press q to hide/show)</a>
-    <script src="../JS/design-1.js"></script>
+<body id="body-">
+    <script defer src="../JS/site-menu.js"></script>
+
+    <div id="site-menu">
+        <p id="menu-hidden-display">(menu hidden - press "q" to show)</p>
+        <div id="site-menu-main">
+            <p id="site-menu-random-p"><a id="site-menu-random-a" href="">Go to a random site design</a> (press q to hide/show)</p>
+            <p id="site-menu-color-change">Change site colour scheme (w)</p>
+            <p id="site-menu-style-shift">Shift the style - see varients for this page (e)</p>
+        </div>
+    </div>
+
+    <div id="scroll-amount"></div>
+    <header>
+        <nav>
+            <ul id="left-links">
+                <li><a href="">Lorem.</a></li>
+                <li><a href="">Lorem.</a></li>
+                <li><a href="">Lorem.</a></li>
+                <li><a href="">Lorem.</a></li>
+                <li><a href="">Lorem.</a></li>
+            </ul>
+            <ul id="right-links">
+                <li><a href="">Lorem.</a></li>
+                <li><a href="">Lorem.</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <div id="purpose-display" class="opacity-none">
-            <h1>Lorem ipsum dolor sit amet.</h1>
+        <div id="purpose-display-container">
+            <div id="purpose-display">
+                <h1 id="main-h1">Lorem ipsum dolor sit amet.</h1>
+            </div>
+        </div>
+        <div>
+            <h2>Scrollbar<br><br><br><br><br><br><br><br>Test</h2>
         </div>
     </main>
     <footer></footer>

@@ -1,3 +1,7 @@
+:root {
+    --color-shift-amount: 360deg;
+}
+
 * {
     background-color: black;
     box-sizing: border-box;
@@ -35,7 +39,7 @@ h1 {
         filter: hue-rotate(0deg);
     }
     100% {
-        filter: hue-rotate(360deg)
+        filter: hue-rotate(var(--color-shift-amount))
     }
 }
 
@@ -133,3 +137,4 @@ h2 {
     color: white;
     text-align: center;
 }
+
