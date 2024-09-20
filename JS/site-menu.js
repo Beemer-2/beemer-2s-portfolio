@@ -8,6 +8,7 @@ let mainStylesheetLink = document.getElementById("main-stylesheet");
 let siteMenuMain = document.getElementById("site-menu-main");
 let colorScheme = 1;
 let colorCheck;
+let styleCheck = 1
 
 
 randomSiteA.addEventListener("click", () => {
@@ -25,17 +26,43 @@ document.addEventListener("keydown", (keyClicked) => {
             hiddenDisplay.style.opacity = 0;
         }
     } else if (keyClicked.key == "e") {
-        let styleCheck = mainStylesheetLink.getAttribute("href");
-        console.log(styleCheck);
-        if (styleCheck == "../CSS/design-1-stylesheet-shift-1.css") {
+
+        styleCheck += 1
+        if (styleCheck % 3 == 1) {
             mainStylesheetLink.href = "../CSS/design-1-stylesheet-main.css";
-        } else {
+        } else if (styleCheck % 3 == 2) {
             mainStylesheetLink.href = "../CSS/design-1-stylesheet-shift-1.css";
+        } else {
+            mainStylesheetLink.href = "../CSS/design-1-stylesheet-shift-2.css";
         }
     } else if (keyClicked.key == "w") {
-        colorScheme += 1
-        //Not sure what to add here.. <--
-        //I want to change the hue-rotate() amount for the "hue" animation.
+        colorScheme += 1;
+        let middleVar = getComputedStyle(document.body).getPropertyValue("--color-shift-amount-middle");
+        let endVar = getComputedStyle(document.body).getPropertyValue("--color-shift-amount-end");
+
+        if (colorScheme % 4 == 1) {
+            document.body.style.setProperty("--color-shift-amount-start", "0deg");
+            document.body.style.setProperty("--color-shift-amount-middle", "180deg");
+            document.body.style.setProperty("--color-shift-amount-end", "360deg");
+        }
+        
+        else if (colorScheme % 4 == 2) {
+            document.body.style.setProperty("--color-shift-amount-start", "130deg");
+            document.body.style.setProperty("--color-shift-amount-middle", "190deg");
+            document.body.style.setProperty("--color-shift-amount-end", "130deg");
+        }
+
+        else if (colorScheme % 4 == 3) {
+            document.body.style.setProperty("--color-shift-amount-start", "100deg");
+            document.body.style.setProperty("--color-shift-amount-middle", "130deg");
+            document.body.style.setProperty("--color-shift-amount-end", "100deg");
+        }
+
+        else if (colorScheme % 4 == 0) {
+            document.body.style.setProperty("--color-shift-amount-start", "0deg");
+            document.body.style.setProperty("--color-shift-amount-middle", "35deg");
+            document.body.style.setProperty("--color-shift-amount-end", "0deg");
+        }
     }
 });
 
