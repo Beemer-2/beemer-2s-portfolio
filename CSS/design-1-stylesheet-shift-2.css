@@ -140,3 +140,51 @@ h2 {
     color: white;
     text-align: center;
 }
+
+
+
+
+#main-paragraph-container {
+    position: relative;
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 2fr 3fr 3fr;
+    padding: 120px;
+    font-size: xx-large;
+    color: white;
+}
+
+#main-paragraph-ul {
+    align-items: end;
+    color: white;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+#main-paragraph-ul > li {
+    font-size: xx-large;
+    text-wrap:nowrap
+}
+
+.hidden-main {
+    transition: 2s ease-out;
+    transform: translateY(20%);
+    opacity: 0;
+}
+
+.main-show {
+    transform: translateY(-20%);
+    opacity: 1;
+}
+
+.hidden-side {
+    transition: 2s ease-out;
+    gap: 0 140%;
+    opacity: 0;
+}
+
+.side-show {
+    gap: 0% 40%;
+    opacity: 1;
+}
