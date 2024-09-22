@@ -18,12 +18,14 @@ body {
 #scrolling-background {
     z-index: -1;
     position: absolute;
-    width: 300%;
-    height: 300%;
     background-color: black; /* Helps prevent flashing when loading site */
-    background-image: url("../ASSETS/Space.png");
     animation: infinite linear 140s move-background;
+    height: 100%;
+    width: 100%;
+    background-image: url("../ASSETS/spaceSquare.png");
+    overflow: hidden;
     background-repeat: repeat;
+    transform-origin: 50% 50%;
 }
 
 header {
@@ -59,11 +61,11 @@ nav > ul {
 
 @keyframes move-background {
     0% {
-        transform: translate(0, 0);
+        transform: rotate(0deg);
     }
 
     100% {
-        transform: translate(-50%, -50%) rotate(70deg);
+        transform: rotate(360deg);
     }
 }
 
