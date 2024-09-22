@@ -54,7 +54,7 @@ document.addEventListener("keydown", (keyClicked) => {
             document.body.style.setProperty("--color-shift-amount-middle", "190deg");
             document.body.style.setProperty("--color-shift-amount-end", "130deg");
         }
-
+ 
         else if (colorScheme % 8 == 3) {
             document.body.style.setProperty("--color-shift-amount-start", "100deg");
             document.body.style.setProperty("--color-shift-amount-middle", "130deg");

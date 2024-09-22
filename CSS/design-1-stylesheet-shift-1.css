@@ -1,6 +1,7 @@
 :root {
-    --color-shift-amount-end: 180deg; 
-    --color-shift-amount-middle: 360deg
+    --color-shift-amount-start: 0deg; 
+    --color-shift-amount-middle: 180deg; 
+    --color-shift-amount-end: 360deg;
 }
 
 * {
