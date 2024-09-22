@@ -76,7 +76,8 @@ main {
     background-color: #090909;
     border-radius: 12px;
     border-image: linear-gradient(110deg, #16d559, #1aa090);
-    box-shadow: 0 0 110px #18BB75;
+    box-shadow: 0 0 80px #18BB75;
+    transition: 3s ease-out;
     animation: hue 8s infinite linear;
     
 }
@@ -142,6 +143,16 @@ h2 {
 }
 
 
+#main-paragraph-container > h2, #main-paragraph-container > p {
+    color: white;
+    text-align: center;
+}
+
+
+#main-paragraph-h2 {
+    margin: 0;
+    margin-top: 60px;
+}
 
 
 #main-paragraph-container {
@@ -151,11 +162,11 @@ h2 {
     grid-template-rows: 2fr 3fr 3fr;
     padding: 120px;
     font-size: xx-large;
-    color: white;
+    padding-bottom: 0px;
 }
 
 #main-paragraph-ul {
-    align-items: end;
+    align-items: top;
     color: white;
     justify-content: center;
     display: grid;

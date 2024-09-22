@@ -28,40 +28,67 @@ document.addEventListener("keydown", (keyClicked) => {
     } else if (keyClicked.key == "e") {
 
         styleCheck += 1
-        if (styleCheck % 3 == 1) {
+        if (styleCheck % 4 == 1) {
             mainStylesheetLink.href = "../CSS/design-1-stylesheet-main.css";
-        } else if (styleCheck % 3 == 2) {
+        } else if (styleCheck % 4 == 2) {
             mainStylesheetLink.href = "../CSS/design-1-stylesheet-shift-1.css";
-        } else {
+        } else if (styleCheck % 4 == 3) {
             mainStylesheetLink.href = "../CSS/design-1-stylesheet-shift-2.css";
+        } else {
+            mainStylesheetLink.href = "../CSS/design-1-stylesheet-shift-3.css";
         }
+
     } else if (keyClicked.key == "w") {
         colorScheme += 1;
         let middleVar = getComputedStyle(document.body).getPropertyValue("--color-shift-amount-middle");
         let endVar = getComputedStyle(document.body).getPropertyValue("--color-shift-amount-end");
 
-        if (colorScheme % 4 == 1) {
+        if (colorScheme % 8 == 1) {
             document.body.style.setProperty("--color-shift-amount-start", "0deg");
             document.body.style.setProperty("--color-shift-amount-middle", "180deg");
             document.body.style.setProperty("--color-shift-amount-end", "360deg");
         }
         
-        else if (colorScheme % 4 == 2) {
+        else if (colorScheme % 8 == 2) {
             document.body.style.setProperty("--color-shift-amount-start", "130deg");
             document.body.style.setProperty("--color-shift-amount-middle", "190deg");
             document.body.style.setProperty("--color-shift-amount-end", "130deg");
         }
 
-        else if (colorScheme % 4 == 3) {
+        else if (colorScheme % 8 == 3) {
             document.body.style.setProperty("--color-shift-amount-start", "100deg");
             document.body.style.setProperty("--color-shift-amount-middle", "130deg");
             document.body.style.setProperty("--color-shift-amount-end", "100deg");
         }
 
-        else if (colorScheme % 4 == 0) {
+        else if (colorScheme % 8 == 4) {
             document.body.style.setProperty("--color-shift-amount-start", "0deg");
             document.body.style.setProperty("--color-shift-amount-middle", "35deg");
             document.body.style.setProperty("--color-shift-amount-end", "0deg");
+        }
+
+        else if (colorScheme % 8 == 5) {
+            document.body.style.setProperty("--color-shift-amount-start", "230deg");
+            document.body.style.setProperty("--color-shift-amount-middle", "265deg");
+            document.body.style.setProperty("--color-shift-amount-end", "230deg");
+        }
+
+        else if (colorScheme % 8 == 6) {
+            document.body.style.setProperty("--color-shift-amount-start", "30deg");
+            document.body.style.setProperty("--color-shift-amount-middle", "80deg");
+            document.body.style.setProperty("--color-shift-amount-end", "30deg");
+        }
+
+        else if (colorScheme % 8 == 7) {
+            document.body.style.setProperty("--color-shift-amount-start", "0deg");
+            document.body.style.setProperty("--color-shift-amount-middle", "210deg");
+            document.body.style.setProperty("--color-shift-amount-end", "0deg");
+        }
+
+        else if (colorScheme % 8 == 0) {
+            document.body.style.setProperty("--color-shift-amount-start", "220deg");
+            document.body.style.setProperty("--color-shift-amount-middle", "360deg");
+            document.body.style.setProperty("--color-shift-amount-end", "220deg");
         }
     }
 });

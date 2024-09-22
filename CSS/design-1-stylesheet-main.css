@@ -60,15 +60,11 @@ main {
 
 
 #purpose-display-container {
-    transition: 1s ease-in-out;
     padding: 10px;
     width: fit-content;
     text-align: center;
-
     z-index: 2;
-
-
-    
+    transition: 1s ease-in-out;
 }
 
 #purpose-display {
@@ -77,6 +73,7 @@ main {
     border: 7px white solid;
     border-image: linear-gradient(110deg, #16d559, #1aa090);
     animation: hue 8s infinite linear;
+    transition: 3s ease-out;
     
 }
 
@@ -141,6 +138,11 @@ li > a {
 }
 
 
+#main-paragraph-h2 {
+    margin: 0;
+    margin-top: 60px;
+}
+
 
 
 #main-paragraph-container {
@@ -150,10 +152,11 @@ li > a {
     grid-template-rows: 2fr 3fr 3fr;
     padding: 120px;
     font-size: xx-large;
+    padding-bottom: 0px;
 }
 
 #main-paragraph-ul {
-    align-items: end;
+    align-items: top;
     color: white;
     justify-content: center;
     display: grid;
@@ -185,4 +188,54 @@ li > a {
 .side-show {
     gap: 0% 40%;
     opacity: 1;
+}
+
+
+
+#selectable-section {
+    display: grid;
+    grid-template-columns: 40fr 1fr 60fr;
+    grid-template-rows: none;
+    padding: 0px 100px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+footer {
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+footer > p {
+    color: white;
+    margin-right: 18px;
 }
