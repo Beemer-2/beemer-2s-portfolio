@@ -4,12 +4,19 @@
     --color-shift-amount-end: 360deg;
 }
 
-* {
+html:not(h1) {
+    color: white
+}
+
+
+html {
     background-color: black;
+    transition: 0.9s ease-in;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     scrollbar-width: none;
 }
+
 
 *::-webkit-scrollbar {
     display: none;
@@ -27,7 +34,6 @@ body {
 
 #main-h1 {
     margin: 0;
-    color: white;
     background-image: linear-gradient(110deg, #16d559, #1aa090);
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -131,7 +137,6 @@ li > a {
 }
 
 #main-paragraph-container > h2, #main-paragraph-container > p {
-    color: white;
     text-align: center;
 }
 
@@ -155,7 +160,6 @@ li > a {
 
 #main-paragraph-ul {
     align-items: top;
-    color: white;
     justify-content: center;
     display: grid;
     grid-template-columns: auto auto;
@@ -235,6 +239,5 @@ footer {
 }
 
 footer > p {
-    color: white;
     margin-right: 18px;
 }

@@ -5,7 +5,6 @@ document.getElementById("main-paragraph-p").classList.add("hidden-main");
 document.getElementById("main-paragraph-ul").classList.remove("side-show");
 document.getElementById("main-paragraph-ul").classList.add("hidden-side");
 
-console.log("check");
 
 let clientHeightLet = document.documentElement.clientHeight;
 

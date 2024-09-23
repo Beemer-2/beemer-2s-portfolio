@@ -1,8 +1,15 @@
-* {
+html {
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: white;
+}
+
+* {
     scrollbar-width: none;
+}
+
+a {
+    color: white;
 }
 
 html, body {
@@ -15,6 +22,7 @@ body {
     margin: 0;
     background-color: black;
 }
+
 
 #scrolling-background {
     z-index: -1;
@@ -174,4 +182,9 @@ main > p {
         font-size: larger;
     }
     
+}
+
+
+#photosensitivity-span {
+    color:tomato !important;
 }

@@ -18,7 +18,7 @@
 
 #menu-hidden-display {
     font-size: x-small;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     z-index: 100000;
