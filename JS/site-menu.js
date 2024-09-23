@@ -8,8 +8,8 @@ let mainStylesheetLink = document.getElementById("main-stylesheet");
 let siteMenuMain = document.getElementById("site-menu-main");
 let colorScheme = 1;
 let colorCheck;
-let styleCheck = 1
-
+let styleCheck = 1;
+let secretEnabled = false;
 
 randomSiteA.addEventListener("click", () => {
     randomSiteA.href = randomDesignLinks[Math.floor(Math.random() * randomDesignLinks.length)];
@@ -90,7 +90,27 @@ document.addEventListener("keydown", (keyClicked) => {
             document.body.style.setProperty("--color-shift-amount-middle", "360deg");
             document.body.style.setProperty("--color-shift-amount-end", "220deg");
         }
+    } else if (keyClicked.key == "p") {
+        if (secretEnabled == true) {
+            secretEnabled = false;
+            document.getElementById("main-h1").innerHTML = "Lorem ipsum dolor sit amet.";
+            document.getElementById("main-h1").style.backgroundImage = "linear-gradient(110deg, #16d559, #1aa090)";
+            document.getElementById("purpose-display").style.borderImage = "linear-gradient(110deg, #16d559, #1aa090)";
+            /*if (styleCheck % 4 == 2) {
+                document.getElementById("purpose-display-container").style.backgroundImage = "linear-gradient(110deg, #16d559, #1aa090)";
+            }*/
+            
+        } else {
+            secretEnabled = true;
+            document.getElementById("main-h1").innerHTML += " secret :o";
+            document.getElementById("main-h1").style.backgroundImage = "linear-gradient(110deg, #16d559, #a01a1a, #dce401, #0729ea)";
+            document.getElementById("purpose-display").style.borderImage = "linear-gradient(110deg, #16d559, #a01a1a, #dce401, #0729ea)";
+            /*if (styleCheck % 4 == 2) {
+                document.getElementById("purpose-display-container").style.backgroundImage = "linear-gradient(110deg, #16d559, #a01a1a, #dce401, #0729ea)";
+            }*/
+        }
     }
+    
 });
 
 

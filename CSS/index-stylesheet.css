@@ -27,6 +27,7 @@ body {
     overflow: hidden;
     background-repeat: repeat;
     transform-origin: 50% 50%;
+    max-width: 1000%;
 }
 
 header {

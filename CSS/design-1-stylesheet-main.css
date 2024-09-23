@@ -25,7 +25,7 @@ body {
 }
 
 
-h1 {
+#main-h1 {
     margin: 0;
     color: white;
     background-image: linear-gradient(110deg, #16d559, #1aa090);
@@ -50,9 +50,7 @@ h1 {
 main {
     display: grid;
     justify-content: center;
-    align-items: center;
-    justify-items: center;
-    position: relative;
+    position: absolute;
     place-items: center;
     grid-template-rows: 100vh;
     grid-template-rows: 100svh;
@@ -73,7 +71,7 @@ main {
     border: 7px white solid;
     border-image: linear-gradient(110deg, #16d559, #1aa090);
     animation: hue 8s infinite linear;
-    transition: 3s ease-out;
+    transition: 0.3s ease-out;
     
 }
 
@@ -103,7 +101,7 @@ main {
 header {
     color: whitesmoke;
     position: fixed;
-    width: 100%;
+    width: 100vw;
     z-index: 1000;
 }
 
@@ -161,6 +159,7 @@ li > a {
     justify-content: center;
     display: grid;
     grid-template-columns: auto auto;
+    overflow: hidden;
 }
 
 #main-paragraph-ul > li {
