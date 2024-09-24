@@ -163,7 +163,7 @@ h2 {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: 2fr 3fr 3fr;
-    padding: 120px;
+    margin: 12vw;
     font-size: xx-large;
     padding-bottom: 0px;
 }
@@ -194,11 +194,39 @@ h2 {
 
 .hidden-side {
     transition: 2s ease-out;
-    gap: 0 140%;
+    gap: 0 140vw;
     opacity: 0;
 }
 
 .side-show {
-    gap: 0% 40%;
+    gap: 0% 20vw;
     opacity: 1;
+}
+
+
+
+@media (max-width: 1550px) {
+    .side-show {
+        gap: 0% 8vw;
+        opacity: 1;
+    }
+}
+
+
+@media (max-width: 1300px) {
+    #main-paragraph-ul {
+        grid-template-columns: auto;
+        justify-content: left;
+        height: fit-content;
+        width: fit-content;
+    }
+
+    #main-paragraph-ul > li {
+        margin: 8px 0px;
+    }
+
+    #main-paragraph-container {
+        grid-template-rows: 2fr 3fr 1fr;
+        align-items: center;
+    }
 }
