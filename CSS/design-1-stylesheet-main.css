@@ -72,6 +72,7 @@ main {
 }
 
 #purpose-display {
+    margin: 30px;
     padding: 20px;
     background-color: #090909;
     border: 7px white solid;
