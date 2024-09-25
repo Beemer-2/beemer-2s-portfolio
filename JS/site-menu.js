@@ -143,6 +143,8 @@ document.addEventListener("keydown", (keyClicked) => {
                 document.querySelectorAll("#site-menu-main > *").forEach(item => {item.style.color = "white";});
                 document.getElementById("site-menu-random-a").style.color = "white";
                 document.getElementById("menu-hidden-display").style.color = "white";
+                document.querySelector("header").style.backgroundColor = "black";
+                document.getElementById("scroll-amount").style.backgroundColor = "white";
                 document.querySelectorAll('li > a').forEach((item) => {item.style.color = "white";});
             } else if (!lightMode && modeDelayDisabled) {
                 lightMode = true;
@@ -155,6 +157,8 @@ document.addEventListener("keydown", (keyClicked) => {
                 document.querySelectorAll("#site-menu-main > *").forEach(item => {item.style.color = "black";});
                 document.getElementById("site-menu-random-a").style.color = "black";
                 document.getElementById("menu-hidden-display").style.color = "black";
+                document.querySelector("header").style.backgroundColor = "white";
+                document.getElementById("scroll-amount").style.backgroundColor = "black";
                 document.querySelectorAll('li > a').forEach((item) => {item.style.color = "black";});
             }
             /* Epileptic accessability (prevents the modes from changing quickly if 'r' is held down. (2 second delay)) */

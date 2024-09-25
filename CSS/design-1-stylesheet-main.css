@@ -8,6 +8,10 @@ html:not(h1) {
     color: white
 }
 
+#purpose-display-container * {
+    transition: 2s ease-in-out;
+}
+
 
 html {
     background-color: black;
@@ -66,7 +70,6 @@ main {
 
 
 #purpose-display-container {
-    padding: 10px;
     width: fit-content;
     text-align: center;
     z-index: 2;
@@ -74,7 +77,6 @@ main {
 }
 
 #purpose-display {
-    margin: 30px;
     padding: 20px;
     background-color: #090909;
     border: 7px white solid;
@@ -113,6 +115,7 @@ header {
     width: 100vw;
     z-index: 1000;
     background-color: black;
+    transition: 0.8s ease-in-out;
 }
 
 nav {
@@ -218,9 +221,6 @@ li > a {
 
 
 
-
-
-
 @media (max-width: 1550px) {
     .side-show {
         gap: 0% 8vw;
@@ -278,7 +278,8 @@ li > a {
     }
 
     #right-links, #left-links {
-        margin-bottom: 4px
+        margin-bottom: 4px;
+        padding-left: 0
     }
 
 
@@ -288,5 +289,40 @@ li > a {
 
     #main-paragraph-ul {
         transform: translateY(-40px);
+    }
+}
+
+@media (max-width: 390px) {
+    nav > ul {
+        gap: 8px;
+        font-size: small;
+    }
+
+    #purpose-display {
+        padding: 6px 2px;
+    }
+
+    #main-h1 {
+        font-size: medium;
+        letter-spacing: 0px;
+    }
+}
+
+@media (max-height: 300px) {
+    #right-links {
+        margin: 0px;
+    }
+
+    #left-links {
+        margin-top: 6px;
+    }
+
+    header {
+        padding-bottom: 6px;
+        padding-top: 8px;
+    }
+
+    #menu-hidden-display {
+        font-size: 0.5rem !important;
     }
 }
