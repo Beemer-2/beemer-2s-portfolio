@@ -60,6 +60,8 @@ main {
     place-items: center;
     grid-template-rows: 100vh;
     grid-template-rows: 100svh;
+    max-width: 100vw;
+    overflow: hidden;
 }
 
 
@@ -110,6 +112,7 @@ header {
     position: fixed;
     width: 100vw;
     z-index: 1000;
+    background-color: black;
 }
 
 nav {
@@ -137,7 +140,7 @@ li > a {
     padding-right: 24px;
 }
 
-#main-paragraph-container > h2, #main-paragraph-container > p {
+#main-paragraph-container > div > h2, #main-paragraph-container > div > p {
     text-align: center;
 }
 
@@ -145,16 +148,21 @@ li > a {
 #main-paragraph-h2 {
     margin: 0;
     margin-top: 60px;
+    margin-bottom: 80px;
+}
+
+#main-paragraph-p {
+    max-width: 90vw;
+    margin: 0 auto;
 }
 
 
 
 #main-paragraph-container {
     position: relative;
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: 2fr 3fr 3fr;
     margin: 12vw;
+    margin-bottom: 9vh;
+    margin-bottom: 9svh;
     font-size: xx-large;
     padding-bottom: 0px;
 }
@@ -164,23 +172,26 @@ li > a {
     display: grid;
     grid-template-columns: auto auto;
     justify-content: center;
-    overflow: hidden;
-
+    margin-top: 0;
+    transition: 2s linear;
 }
 
 #main-paragraph-ul > li {
     font-size: xx-large;
-    text-wrap:nowrap
+    text-wrap: nowrap;
+    padding: 6px 0px;
+    transition: 2s linear;
+    
 }
 
 .hidden-main {
     transition: 2s ease-out;
-    transform: translateY(20%);
+    transform: translateY(100px);
     opacity: 0;
 }
 
 .main-show {
-    transform: translateY(-20%);
+    transform: translateY(-100px);
     opacity: 1;
 }
 
@@ -226,12 +237,56 @@ li > a {
         width: fit-content;
     }
 
+    #main-h1 {
+        font-size: xx-large;
+    }
+
     #main-paragraph-ul > li {
         margin: 8px 0px;
     }
 
-    #main-paragraph-container {
-        grid-template-rows: 2fr 3fr 1fr;
+}
+
+@media (max-width: 650px) {
+    nav {
+        font-size: small;
+        flex-direction: column;
         align-items: center;
+    }
+
+    header {
+        padding-top: 10px;
+        padding-bottom: 20px;
+    }
+
+    #main-paragraph-p {
+        font-size: medium;
+    }
+
+    #main-paragraph-ul > li {
+        font-size: large;
+    }
+
+
+    h2 {
+        font-size: large;
+    }
+
+    #right-links {
+        padding-right: 0;
+        padding-left: 18px;
+    }
+
+    #right-links, #left-links {
+        margin-bottom: 4px
+    }
+
+
+    #main-h1 {
+        font-size: large;
+    }
+
+    #main-paragraph-ul {
+        transform: translateY(-40px);
     }
 }
