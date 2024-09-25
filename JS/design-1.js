@@ -1,4 +1,4 @@
-"strict mode"
+"use strict"
 
 document.getElementById("main-paragraph-h2").classList.add("hidden-main");
 document.getElementById("main-paragraph-p").classList.add("hidden-main");

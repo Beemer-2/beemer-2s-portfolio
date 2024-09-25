@@ -1,8 +1,5 @@
-"strict mode"
+"use strict"
 
-let randomDesignLinks = ["design-1.html"];
-
-let randomSiteA = document.getElementById("site-menu-random-a");
 let hiddenDisplay = document.getElementById("menu-hidden-display");
 let mainStylesheetLink = document.getElementById("main-stylesheet");
 let siteMenuMain = document.getElementById("site-menu-main");
@@ -18,10 +15,6 @@ let multiColorDelayDisabled = true;
 
 //Enables the first animation by moving it off the screen so it can transition onto the screen.
 siteMenuMain.style.transform = "translateY(-240px)";
-
-randomSiteA.addEventListener("click", () => {
-    randomSiteA.href = randomDesignLinks[Math.floor(Math.random() * randomDesignLinks.length)];
-});
 
 
 
@@ -232,19 +225,3 @@ document.getElementById("site-menu-multicolor").addEventListener("click", (click
     multiColorChanger();
 });
 
-
-//let currentState = false;
-/*Adds a blinking effect. OLD MAY NOT WORK. 
-function changeState() {
-    console.log("thing")
-    if (currentState) {
-        currentState = false;
-        randomSiteA.style.backgroundColor = "black";
-    } else {
-        currentState = true;
-        randomSiteA.style.backgroundColor = "transparent";
-    }
-    setTimeout(() => {changeState()}, 2000);
-}
-
-changeState(); */

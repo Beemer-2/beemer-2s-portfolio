@@ -1,4 +1,3 @@
-"strict mode"
 /* ROCKET CODE - to be implemented
 let moveX;
 let moveY;
