@@ -49,3 +49,15 @@ document.getElementById("new-folder").addEventListener("click", (e) => {
     newFolder.src = "../ASSETS/placeholder-image.png";
     document.getElementById("desktop").appendChild(newFolder);
 });
+
+document.getElementById("new-text-document").addEventListener("click", (e) => {
+    let newTextDoc = document.createElement("img");
+    newTextDoc.src = "../ASSETS/placeholder-text-document.png";
+    document.getElementById("desktop").appendChild(newTextDoc);
+});
+
+
+//Function which will be used to request fullscreen when needed 
+function fullscreen() {
+    console.log(document.body.requestFullscreen());
+}
