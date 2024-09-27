@@ -1,0 +1,89 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+    cursor: crosshair
+}
+
+img:hover {
+    background-color: rgb(151, 206, 255);
+    border: 1px dotted black;
+    padding: 4px;
+    filter: drop-shadow(0px 0px 3px black);
+}
+
+#right-click-menu > p {
+    margin: 0;
+    padding: 8px;
+}
+
+#right-click-menu > p:hover {
+    background-color: rgb(207, 207, 207);
+}
+
+#right-click-menu {
+    background-color: gainsboro;
+    border: 2px solid black;
+    width: fit-content;
+    position: absolute;
+    display: none;
+}
+
+img {
+    padding: 5px
+}
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+main {
+    background-color: rgb(169, 215, 255);
+    height: 100%;
+    padding: 20px
+}
+
+#desktop {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+    gap: 10px
+}
+
+footer {
+    width: 100%;
+    background-color: gainsboro;
+    height: 80px;
+    position: fixed;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 14px;
+    border: 2px solid gray
+}
+
+footer > div {
+    display: flex;
+    align-items: center;
+}
+
+#central-items {
+    gap: 10px;
+}
+
+#left-items {
+
+}
+
+#right-items > div {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+    text-align: right;
+}

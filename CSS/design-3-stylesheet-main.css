@@ -1,0 +1,29 @@
+
+html::-webkit-scrollbar {
+    display: none;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+
+html {
+    background-color: salmon;
+    z-index: 0;
+}
+
+#grid-lines {
+    height: 120%;
+    width: 120%;
+    position: absolute;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 16px);
+    grid-template-rows: repeat(auto-fill, 16px);
+    background-color: black;
+    gap: 4px;
+    scrollbar-width: 0;
+    border: 4px solid salmon;
+    z-index: 1
+}
